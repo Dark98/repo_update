@@ -131,19 +131,6 @@ git fetch $LINK refs/changes/61/744361/2 && git cherry-pick FETCH_HEAD
 git fetch $LINK refs/changes/62/744362/5 && git cherry-pick FETCH_HEAD
 popd
 
-pushd $ANDROOT/frameworks/base
-LINK=$HTTP && LINK+="://android.googlesource.com/platform/frameworks/base"
-# Add camera key long press handling
-# Change-Id: I9e68032eee221c20608f0d2c491c2b308350f7f6
-git fetch $LINK refs/changes/15/727815/1 && git cherry-pick FETCH_HEAD
-# fwb: Add check for odm version
-# Change-Id: Ifab6ca5c2f97840bb4192226f191e624267edb32
-git fetch $LINK refs/changes/75/728575/1 && git cherry-pick FETCH_HEAD
-# Fix bug Device that can't support adoptable storage cannot read the sdcard.
-# Change-Id: I7afe5078650fe646e79fced7456f90d4af8a449a
-git fetch $LINK refs/changes/05/728605/1 && git cherry-pick FETCH_HEAD
-popd
-
 pushd $ANDROOT/system/core
 LINK=$HTTP && LINK+="://android.googlesource.com/platform/system/core"
 # Show bootanimation after decrypt
