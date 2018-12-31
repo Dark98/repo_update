@@ -153,7 +153,8 @@ pushd $ANDROOT/frameworks/base
 LINK=$HTTP && LINK+="://android.googlesource.com/platform/frameworks/base"
 # Add camera key long press handling
 # Change-Id: I9e68032eee221c20608f0d2c491c2b308350f7f6
-git fetch $LINK refs/changes/15/727815/1 && git cherry-pick FETCH_HEAD
+#TODO
+# git fetch $LINK refs/changes/15/727815/1 && git cherry-pick FETCH_HEAD
 # fwb: Add check for odm version
 # Change-Id: Ifab6ca5c2f97840bb4192226f191e624267edb32
 git fetch $LINK refs/changes/75/728575/1 && git cherry-pick FETCH_HEAD
@@ -162,14 +163,16 @@ git fetch $LINK refs/changes/75/728575/1 && git cherry-pick FETCH_HEAD
 git fetch $LINK refs/changes/05/728605/1 && git cherry-pick FETCH_HEAD
 # SystemUI: Implement burn-in protection for status-bar/nav-bar items
 # Change-Id: I828dbd4029b4d3b1f2c86b682a03642e3f9aeeb9
-git fetch $LINK refs/changes/40/824340/1 && git cherry-pick FETCH_HEAD
+#TODO
+#git fetch $LINK refs/changes/40/824340/1 && git cherry-pick FETCH_HEAD
 popd
 
 pushd $ANDROOT/system/core
 LINK=$HTTP && LINK+="://android.googlesource.com/platform/system/core"
 # Show bootanimation after decrypt
 # Change-Id: I355ccdbb2e2f27d897e2e0ee00f9300ef38ede03
-git fetch $LINK refs/changes/01/741001/2 && git cherry-pick FETCH_HEAD
+#TODO
+#git fetch $LINK refs/changes/01/741001/2 && git cherry-pick FETCH_HEAD
 popd
 
 # because "set -e" is used above, when we get to this point, we know
